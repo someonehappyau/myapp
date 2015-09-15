@@ -1,8 +1,5 @@
 extends layout
 
-
-
-
 block content
 	.container
 		h1 Hello #{pam1}
@@ -12,5 +9,5 @@ block content
 				li=kk+' | '+nn
 
 		ul 
-			each val,index in pamobj
-				li=index+' | '+val
+			each val,index in pamret
+				li=index+' | '+val.label
