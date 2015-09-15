@@ -1,4 +1,16 @@
 extends layout
 
+
+
+
 block content
-	h1 'Hello'
+	.container
+		h1 Hello #{pam1}
+		h1 Hello #{pam2}
+		ul
+			each nn,kk in pamlist
+				li=kk+' | '+nn
+
+		ul 
+			each val,index in pamobj
+				li=index+' | '+val
